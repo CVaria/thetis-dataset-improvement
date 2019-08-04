@@ -1,0 +1,28 @@
+Information on dataset THETIS:
+	http://thetis.image.ece.ntua.gr/
+
+Information on this project:
+	https://ieeexplore.ieee.org/document/8490458 
+
+Thesis Project consists of 3 parts:
+
+- Extraction of refined skeletal data from THETIS dataset (Skeletal_extraction file)
+	A program that extracts the skeletal data of every movement each tennis player performs.
+	The data refinement is achieved using a weighted average of the coordinates 
+	that are extracted after every movement/action video is repeated for a given number 
+	of times.
+	Implementation using the library of OpenNI/Nite (C++).
+
+- Skeletal data visualization using unity (Scripts_unity)
+	A simple visualization of skeletal coordinates for every frame in each video of THETIS dataset. 
+	This is made for a simple check on how valid the skeletons' movement is during the demonstration
+	of the tennis actions. 
+
+- Implementation of an activity recognition system (Activity_Recognition_Implementation)
+	The algorithm that was implemented is based on paper:
+		Enea Cippitelli Samuele Gasparrini, Ennio Gambi-Susanna Spinsante (2016). 
+		“A Human Activity Recognition System Using Skeleton Data from RGBD Sensors”. 
+		In: Computational Intelligence and Neuroscience.
+	Implementation using matlab.
+	The purpose of the implementation is to compare the activity recognition performance of 
+	skeletal data to other forms of data, that have been extracted from THETIS dataset
